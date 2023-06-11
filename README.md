@@ -25,3 +25,18 @@ npm run dev
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nutlope/twitterbio&env=OPENAI_API_KEY&project-name=twitter-bio-generator&repo-name=twitterbio)
+
+
+#Notes
+
+I Replaced the "bio" variable with "text" to make it an input for any kind of text generation,and then updated the prompt and generated text labels to reflect the change in functionality.
+
+modified the fetch request and response handling to work with the updated prompt and generated text.
+
+Replaced the "generatedBios" state with "generatedText" to store and display the generated text.
+
+For the database, I would use a NoSQL database because 
+
+Change the table structure: Modify the structure of the database table to accommodate the academic context. Instead of storing Twitter bio-related information, create new tables to store academic-related information such as text samples, topics, authors, timestamps, etc. Connect the tables with foreign keys and join them based on topic, author, e.t.c
+
+I deally I would store some of the data in a NoSQL db like MongoDB
